@@ -12,6 +12,7 @@
 		5D0CE9ED207A5BDC00041E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0CE9EB207A5BDC00041E1C /* Main.storyboard */; };
 		5D0CE9EF207A5BDC00041E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0CE9EE207A5BDC00041E1C /* Assets.xcassets */; };
 		5D0CE9F2207A5BDC00041E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0CE9F0207A5BDC00041E1C /* LaunchScreen.storyboard */; };
+		5D0CE9FA207A642C00041E1C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0CE9F9207A642C00041E1C /* Global.swift */; };
 		CF549E2DD3873BE44C61AEB0 /* Pods_PodConsumer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13FD92CBFED08F36625FAA /* Pods_PodConsumer.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5D0CE9EE207A5BDC00041E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0CE9F1207A5BDC00041E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0CE9F3207A5BDD00041E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0CE9F9207A642C00041E1C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		7C13FD92CBFED08F36625FAA /* Pods_PodConsumer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodConsumer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7866D523FA7E7DCEA0A3E2B /* Pods-PodConsumer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodConsumer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodConsumer/Pods-PodConsumer.release.xcconfig"; sourceTree = "<group>"; };
 		A8E9525DCDD0A324ADEF43E9 /* Pods-PodConsumer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodConsumer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodConsumer/Pods-PodConsumer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				5D0CE9EE207A5BDC00041E1C /* Assets.xcassets */,
 				5D0CE9F0207A5BDC00041E1C /* LaunchScreen.storyboard */,
 				5D0CE9F3207A5BDD00041E1C /* Info.plist */,
+				5D0CE9F9207A642C00041E1C /* Global.swift */,
 			);
 			path = PodConsumer;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				5D0CE9EA207A5BDC00041E1C /* ViewController.swift in Sources */,
 				5D0CE9E8207A5BDC00041E1C /* AppDelegate.swift in Sources */,
+				5D0CE9FA207A642C00041E1C /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
