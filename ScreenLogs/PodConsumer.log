@@ -1,0 +1,771 @@
+Last login: Sun Apr  8 08:54:20 on ttys001
+MACC02RR83AG8WP:~ vijayvepakomma$ ls
+AndroidStudioProjects			Movies
+AppDevelopment				Music
+Applications				OneDrive-Philips
+Desktop					Pictures
+Documents				Pod
+Downloads				Projects
+DreamMapperDataCardUploaderSettings	Public
+Drivers					Sapphire
+Dropbox					TFS
+Github					Untitled.js
+Gitlab					Vendors
+Learning				Work
+Library					viewThumbnailImage.jpeg
+LocalNugetSource
+MACC02RR83AG8WP:~ vijayvepakomma$ cd Learning
+MACC02RR83AG8WP:Learning vijayvepakomma$ ls
+CocoaPods			Spring-Cloud
+Dynatrace			SpriteKit
+FlutterExamples			Steeltoe
+GraphQL				Xamarin
+NetCore				shinobicontrols-ios-trial
+Pact				shinobicontrols-ios-trial.zip
+Pods				uaa
+MACC02RR83AG8WP:Learning vijayvepakomma$ cd Pods
+MACC02RR83AG8WP:Pods vijayvepakomma$ ls
+SimplePodExample	YLogging
+MACC02RR83AG8WP:Pods vijayvepakomma$ cd SimplePodExample/
+MACC02RR83AG8WP:SimplePodExample vijayvepakomma$ ls
+FrameworkTest		YLogging
+PodConsumer		YLogging.framework
+MACC02RR83AG8WP:SimplePodExample vijayvepakomma$ cd PodConsumer
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ ls
+PodConsumer		PodConsumer.xcodeproj
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod init
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ ls
+PodConsumer		PodConsumer.xcodeproj	Podfile
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ ls
+PodConsumer		PodConsumer.xcodeproj	Podfile
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ cd ..
+MACC02RR83AG8WP:SimplePodExample vijayvepakomma$ cd ..
+MACC02RR83AG8WP:Pods vijayvepakomma$ git clone https://github.com/vijayvepa/PodConsumer.git
+Cloning into 'PodConsumer'...
+warning: You appear to have cloned an empty repository.
+MACC02RR83AG8WP:Pods vijayvepakomma$ cd PodConsumer
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ open .
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ code .
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: syntax error, unexpected =>, expecting keyword_end
+  :git => "https://github.com/vijayvepa
+         ^
+/Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9: syntax error, unexpected ',', expecting end-of-input.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    :git => "https://github.com/vijayvepa/YLogging.git", :tag => "0.0.2"
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: syntax error, unexpected =>, expecting keyword_end
+  :git => 'https://github.com/vijayvepa
+         ^
+/Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9: syntax error, unexpected ',', expecting end-of-input.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    :git => 'https://github.com/vijayvepa/YLogging.git', :tag => '0.0.2'
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: No such file or directory - YLogging.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    pod `YLogging`, :git => 'https://github.com/vijayvepa/YLogging.git', :tag => '0.0.2'
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: No such file or directory - YLogging.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    pod `YLogging`,:git => 'https://github.com/vijayvepa/YLogging.git',:tag =>'0.0.2'
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: No such file or directory - YLogging.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    pod `YLogging`,:git=>'https://github.com/vijayvepa/YLogging.git',:tag =>'0.0.2'
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+Downloading dependencies
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `PodConsumer.xcworkspace` for this project from now on.
+Sending stats
+Pod installation complete! There are 0 dependencies from the Podfile and 0 total pods installed.
+
+[!] The Podfile does not contain any dependencies.
+
+[!] Automatically assigning platform `ios` with version `11.2` on target `PodConsumer` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: No such file or directory - YLogging.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:9
+ #  -------------------------------------------
+ #    # Pods for PodConsumer
+ >    pod `YLogging`,:git=>'https://github.com/vijayvepa/YLogging.git',:tag =>'0.0.2'
+ #  end
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: unknown regexp options - gthb.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:8
+ #  -------------------------------------------
+ #  
+ >    pod repo add VijayVepa https://github.com/vijayvepa/YLogging.git
+ #  
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: undefined method `VijayVepa' for #<Pod::Podfile:0x00007fe36c0dc558>.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:8
+ #  -------------------------------------------
+ #  
+ >    pod repo add VijayVepa 'https://github.com/vijayvepa/YLogging.git'
+ #  
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+
+[!] Invalid `Podfile` file: undefined method `add' for #<Pod::Podfile:0x00007f8cbb2b43d8>.
+
+ #  from /Users/vijayvepakomma/Learning/Pods/PodConsumer/Podfile:8
+ #  -------------------------------------------
+ #  
+ >    pod repo add 'VijayVepa' 'https://github.com/vijayvepa/YLogging.git'
+ #  
+ #  -------------------------------------------
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+Cloning spec repo `vijayvepa` from `https://github.com/vijayvepa/YLogging.git`
+
+――― MARKDOWN TEMPLATE ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+### Command
+
+```
+/usr/local/bin/pod install
+```
+
+### Report
+
+* What did you do?
+
+* What did you expect to happen?
+
+* What happened instead?
+
+
+### Stack
+
+```
+   CocoaPods : 1.4.0
+        Ruby : ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
+    RubyGems : 2.6.13
+        Host : Mac OS X 10.12.6 (16G1314)
+       Xcode : 9.2 (9C40b)
+         Git : git version 2.14.3 (Apple Git-98)
+Ruby lib dir : /usr/local/Cellar/ruby/2.4.2/lib
+Repositories : manjupic - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               master - https://github.com/CocoaPods/Specs.git @ aaf1a32772213b50cbce1e2b832686bcbb0373b3
+               PhilipsCharts - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               vijayvepa - https://github.com/vijayvepa/YLogging.git @ 4cc5fc10e13098539f4d9be7461e6a3be828bef9
+```
+
+### Plugins
+
+```
+cocoapods-deintegrate : 1.0.2
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.0
+cocoapods-stats       : 1.0.0
+cocoapods-trunk       : 1.3.0
+cocoapods-try         : 1.1.0
+```
+
+### Podfile
+
+```ruby
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'https://github.com/vijayvepa/YLogging.git'
+
+target 'PodConsumer' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PodConsumer
+  pod 'YLogging', '0.0.2'
+end
+```
+
+### Error
+
+```
+TypeError - no implicit conversion of nil into String
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `initialize'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `new'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `from_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification/set.rb:56:in `specification_name'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source.rb:266:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `block in search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `select'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:407:in `create_set_from_sources'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:377:in `find_cached_set'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:351:in `specifications_for_dependency'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:156:in `search_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:267:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_by'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:53:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:70:in `with_no_such_dependency_error_handling'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:52:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:288:in `initial_state'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:210:in `start_resolution'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:168:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolver.rb:43:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:110:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:770:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:767:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:85:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:243:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:154:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:153:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:116:in `install!'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command/install.rb:41:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/claide-1.0.2/lib/claide/command.rb:334:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command.rb:52:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/bin/pod:55:in `<top (required)>'
+/usr/local/bin/pod:23:in `load'
+/usr/local/bin/pod:23:in `<main>'
+```
+
+――― TEMPLATE END ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+[!] Oh no, an error occurred.
+
+Search for existing GitHub issues similar to yours:
+https://github.com/CocoaPods/CocoaPods/search?q=no+implicit+conversion+of+nil+into+String&type=Issues
+
+If none exists, create a ticket, with the template displayed above, on:
+https://github.com/CocoaPods/CocoaPods/issues/new
+
+Be sure to first read the contributing guide for details on how to properly submit a ticket:
+https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md
+
+Don't forget to anonymize any private data!
+
+Looking for related issues on cocoapods/cocoapods...
+ - TypeError - no implicit conversion of Array into String
+   https://github.com/CocoaPods/CocoaPods/issues/7421 [closed] [59 comments]
+   6 weeks ago
+
+ - TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/6381 [closed] [15 comments]
+   5 weeks ago
+
+ - specification.rb:525 TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/5184 [closed] [6 comments]
+   29 Aug 2017
+
+and 16 more at:
+https://github.com/cocoapods/cocoapods/search?q=no%20implicit%20conversion%20of%20nil%20into%20String&type=Issues&utf8=✓
+
+[!] Automatically assigning platform `ios` with version `11.2` on target `PodConsumer` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+
+――― MARKDOWN TEMPLATE ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+### Command
+
+```
+/usr/local/bin/pod install
+```
+
+### Report
+
+* What did you do?
+
+* What did you expect to happen?
+
+* What happened instead?
+
+
+### Stack
+
+```
+   CocoaPods : 1.4.0
+        Ruby : ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
+    RubyGems : 2.6.13
+        Host : Mac OS X 10.12.6 (16G1314)
+       Xcode : 9.2 (9C40b)
+         Git : git version 2.14.3 (Apple Git-98)
+Ruby lib dir : /usr/local/Cellar/ruby/2.4.2/lib
+Repositories : manjupic - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               master - https://github.com/CocoaPods/Specs.git @ aaf1a32772213b50cbce1e2b832686bcbb0373b3
+               PhilipsCharts - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               vijayvepa - https://github.com/vijayvepa/YLogging.git @ 4cc5fc10e13098539f4d9be7461e6a3be828bef9
+```
+
+### Plugins
+
+```
+cocoapods-deintegrate : 1.0.2
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.0
+cocoapods-stats       : 1.0.0
+cocoapods-trunk       : 1.3.0
+cocoapods-try         : 1.1.0
+```
+
+### Podfile
+
+```ruby
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+source 'https://github.com/vijayvepa/YLogging.git'
+
+target 'PodConsumer' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PodConsumer
+  pod 'YLogging', '0.0.2'
+end
+```
+
+### Error
+
+```
+TypeError - no implicit conversion of nil into String
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `initialize'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `new'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `from_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification/set.rb:56:in `specification_name'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source.rb:266:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `block in search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `select'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:407:in `create_set_from_sources'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:377:in `find_cached_set'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:351:in `specifications_for_dependency'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:156:in `search_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:267:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_by'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:53:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:70:in `with_no_such_dependency_error_handling'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:52:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:288:in `initial_state'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:210:in `start_resolution'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:168:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolver.rb:43:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:110:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:770:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:767:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:85:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:243:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:154:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:153:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:116:in `install!'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command/install.rb:41:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/claide-1.0.2/lib/claide/command.rb:334:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command.rb:52:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/bin/pod:55:in `<top (required)>'
+/usr/local/bin/pod:23:in `load'
+/usr/local/bin/pod:23:in `<main>'
+```
+
+――― TEMPLATE END ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+[!] Oh no, an error occurred.
+
+Search for existing GitHub issues similar to yours:
+https://github.com/CocoaPods/CocoaPods/search?q=no+implicit+conversion+of+nil+into+String&type=Issues
+
+If none exists, create a ticket, with the template displayed above, on:
+https://github.com/CocoaPods/CocoaPods/issues/new
+
+Be sure to first read the contributing guide for details on how to properly submit a ticket:
+https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md
+
+Don't forget to anonymize any private data!
+
+Looking for related issues on cocoapods/cocoapods...
+ - TypeError - no implicit conversion of Array into String
+   https://github.com/CocoaPods/CocoaPods/issues/7421 [closed] [59 comments]
+   6 weeks ago
+
+ - TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/6381 [closed] [15 comments]
+   5 weeks ago
+
+ - specification.rb:525 TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/5184 [closed] [6 comments]
+   29 Aug 2017
+
+and 16 more at:
+https://github.com/cocoapods/cocoapods/search?q=no%20implicit%20conversion%20of%20nil%20into%20String&type=Issues&utf8=✓
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ clear
+
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+
+――― MARKDOWN TEMPLATE ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+### Command
+
+```
+/usr/local/bin/pod install
+```
+
+### Report
+
+* What did you do?
+
+* What did you expect to happen?
+
+* What happened instead?
+
+
+### Stack
+
+```
+   CocoaPods : 1.4.0
+        Ruby : ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
+    RubyGems : 2.6.13
+        Host : Mac OS X 10.12.6 (16G1314)
+       Xcode : 9.2 (9C40b)
+         Git : git version 2.14.3 (Apple Git-98)
+Ruby lib dir : /usr/local/Cellar/ruby/2.4.2/lib
+Repositories : manjupic - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               master - https://github.com/CocoaPods/Specs.git @ aaf1a32772213b50cbce1e2b832686bcbb0373b3
+               PhilipsCharts - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               vijayvepa - https://github.com/vijayvepa/YLogging.git @ 4cc5fc10e13098539f4d9be7461e6a3be828bef9
+```
+
+### Plugins
+
+```
+cocoapods-deintegrate : 1.0.2
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.0
+cocoapods-stats       : 1.0.0
+cocoapods-trunk       : 1.3.0
+cocoapods-try         : 1.1.0
+```
+
+### Podfile
+
+```ruby
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+source 'https://github.com/vijayvepa/YLogging.git'
+
+target 'PodConsumer' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PodConsumer
+  pod 'YLogging', '0.0.2'
+end
+```
+
+### Error
+
+```
+TypeError - no implicit conversion of nil into String
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `initialize'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `new'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `from_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification/set.rb:56:in `specification_name'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source.rb:266:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `block in search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `select'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:407:in `create_set_from_sources'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:377:in `find_cached_set'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:351:in `specifications_for_dependency'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:156:in `search_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:267:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_by'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:53:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:70:in `with_no_such_dependency_error_handling'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:52:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:288:in `initial_state'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:210:in `start_resolution'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:168:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolver.rb:43:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:110:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:770:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:767:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:85:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:243:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:154:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:153:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:116:in `install!'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command/install.rb:41:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/claide-1.0.2/lib/claide/command.rb:334:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command.rb:52:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/bin/pod:55:in `<top (required)>'
+/usr/local/bin/pod:23:in `load'
+/usr/local/bin/pod:23:in `<main>'
+```
+
+――― TEMPLATE END ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+[!] Oh no, an error occurred.
+
+Search for existing GitHub issues similar to yours:
+https://github.com/CocoaPods/CocoaPods/search?q=no+implicit+conversion+of+nil+into+String&type=Issues
+
+If none exists, create a ticket, with the template displayed above, on:
+https://github.com/CocoaPods/CocoaPods/issues/new
+
+Be sure to first read the contributing guide for details on how to properly submit a ticket:
+https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md
+
+Don't forget to anonymize any private data!
+
+Looking for related issues on cocoapods/cocoapods...
+ - TypeError - no implicit conversion of Array into String
+   https://github.com/CocoaPods/CocoaPods/issues/7421 [closed] [59 comments]
+   6 weeks ago
+
+ - TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/6381 [closed] [15 comments]
+   5 weeks ago
+
+ - specification.rb:525 TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/5184 [closed] [6 comments]
+   29 Aug 2017
+
+and 16 more at:
+https://github.com/cocoapods/cocoapods/search?q=no%20implicit%20conversion%20of%20nil%20into%20String&type=Issues&utf8=✓
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+[!] CocoaPods could not find compatible versions for pod "YLogging":
+  In Podfile:
+    YLogging (= 0.0.2)
+
+None of your spec sources contain a spec satisfying the dependency: `YLogging (= 0.0.2)`.
+
+You have either:
+ * out-of-date source repos which you can update with `pod repo update` or with `pod install --repo-update`.
+ * mistyped the name or version.
+ * not added the source repo that hosts the Podspec to your Podfile.
+
+Note: as of CocoaPods 1.0, `pod repo update` does not happen on `pod install` by default.
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod repo
+
+manjupic
+- Type: git (master)
+- URL:  https://github.com/ManjuPIC/ManjuPICPodSpec.git
+- Path: /Users/vijayvepakomma/.cocoapods/repos/manjupic
+
+master
+- Type: git (master)
+- URL:  https://github.com/CocoaPods/Specs.git
+- Path: /Users/vijayvepakomma/.cocoapods/repos/master
+
+PhilipsCharts
+- Type: git (master)
+- URL:  https://github.com/ManjuPIC/ManjuPICPodSpec.git
+- Path: /Users/vijayvepakomma/.cocoapods/repos/PhilipsCharts
+
+vijayvepa
+- Type: git (master)
+- URL:  https://github.com/vijayvepa/YLogging.git
+- Path: /Users/vijayvepakomma/.cocoapods/repos/vijayvepa
+
+4 repos
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ git clone https://github.com/vijayvepa/PodSpecs
+Cloning into 'PodSpecs'...
+warning: You appear to have cloned an empty repository.
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ code .
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ open .
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ pod install
+Analyzing dependencies
+
+――― MARKDOWN TEMPLATE ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+### Command
+
+```
+/usr/local/bin/pod install
+```
+
+### Report
+
+* What did you do?
+
+* What did you expect to happen?
+
+* What happened instead?
+
+
+### Stack
+
+```
+   CocoaPods : 1.4.0
+        Ruby : ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
+    RubyGems : 2.6.13
+        Host : Mac OS X 10.12.6 (16G1314)
+       Xcode : 9.2 (9C40b)
+         Git : git version 2.14.3 (Apple Git-98)
+Ruby lib dir : /usr/local/Cellar/ruby/2.4.2/lib
+Repositories : manjupic - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               master - https://github.com/CocoaPods/Specs.git @ aaf1a32772213b50cbce1e2b832686bcbb0373b3
+               PhilipsCharts - https://github.com/ManjuPIC/ManjuPICPodSpec.git @ 3ddfe4ba67eb7f366dc5fbbeeae407677a20364a
+               vijayvepa - https://github.com/vijayvepa/YLogging.git @ 4cc5fc10e13098539f4d9be7461e6a3be828bef9
+```
+
+### Plugins
+
+```
+cocoapods-deintegrate : 1.0.2
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.0
+cocoapods-stats       : 1.0.0
+cocoapods-trunk       : 1.3.0
+cocoapods-try         : 1.1.0
+```
+
+### Podfile
+
+```ruby
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+#source 'https://github.com/vijayvepa/YLogging.git'
+
+target 'PodConsumer' do
+  source 'https://github.com/vijayvepa/YLogging.git'
+  #source 'https://github.com/ManjuPIC/ManjuPICPodSpec.git'
+  source 'https://github.com/CocoaPods/Specs.git'
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PodConsumer
+  pod 'YLogging'
+end
+```
+
+### Error
+
+```
+TypeError - no implicit conversion of nil into String
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `initialize'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `new'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification.rb:584:in `from_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/specification/set.rb:56:in `specification_name'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source.rb:266:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `block in search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `select'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-core-1.4.0/lib/cocoapods-core/source/aggregate.rb:83:in `search'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:407:in `create_set_from_sources'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:377:in `find_cached_set'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:351:in `specifications_for_dependency'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:156:in `search_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:267:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_by'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:260:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:53:in `block in sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:70:in `with_no_such_dependency_error_handling'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/delegates/specification_provider.rb:52:in `sort_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:288:in `initial_state'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:210:in `start_resolution'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolution.rb:168:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/molinillo-0.6.4/lib/molinillo/resolver.rb:43:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/resolver.rb:110:in `resolve'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:770:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:767:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/analyzer.rb:85:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:243:in `analyze'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:154:in `block in resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:153:in `resolve_dependencies'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:116:in `install!'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command/install.rb:41:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/claide-1.0.2/lib/claide/command.rb:334:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/lib/cocoapods/command.rb:52:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/cocoapods-1.4.0/bin/pod:55:in `<top (required)>'
+/usr/local/bin/pod:23:in `load'
+/usr/local/bin/pod:23:in `<main>'
+```
+
+――― TEMPLATE END ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+[!] Oh no, an error occurred.
+
+Search for existing GitHub issues similar to yours:
+https://github.com/CocoaPods/CocoaPods/search?q=no+implicit+conversion+of+nil+into+String&type=Issues
+
+If none exists, create a ticket, with the template displayed above, on:
+https://github.com/CocoaPods/CocoaPods/issues/new
+
+Be sure to first read the contributing guide for details on how to properly submit a ticket:
+https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md
+
+Don't forget to anonymize any private data!
+
+Looking for related issues on cocoapods/cocoapods...
+ - TypeError - no implicit conversion of Array into String
+   https://github.com/CocoaPods/CocoaPods/issues/7421 [closed] [59 comments]
+   6 weeks ago
+
+ - TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/6381 [closed] [15 comments]
+   5 weeks ago
+
+ - specification.rb:525 TypeError - no implicit conversion of nil into String
+   https://github.com/CocoaPods/CocoaPods/issues/5184 [closed] [6 comments]
+   29 Aug 2017
+
+and 16 more at:
+https://github.com/cocoapods/cocoapods/search?q=no%20implicit%20conversion%20of%20nil%20into%20String&type=Issues&utf8=✓
+MACC02RR83AG8WP:PodConsumer vijayvepakomma$ cd ..
+MACC02RR83AG8WP:Pods vijayvepakomma$ cd PodSpecs
+MACC02RR83AG8WP:PodSpecs vijayvepakomma$ ls
+YLogging
+MACC02RR83AG8WP:PodSpecs vijayvepakomma$ code .
+MACC02RR83AG8WP:PodSpecs vijayvepakomma$ 
+
+
+FIX:
+
+Have separate repo for PodSpecs.
